@@ -13,10 +13,10 @@ The .sh files will submit a batch job to one process that iterates through each 
 
 To run submit with:
 
-```julia
+```
 LLsub submit_each.sh
 LLsub submit_overall.sh
 LLsub submit_norm.sh
-`
+```
 
 This directory also contains a Jupyter Notebook that goes over the examples in more detail.
