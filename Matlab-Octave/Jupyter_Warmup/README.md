@@ -10,9 +10,9 @@ Please note that the MIT Supercloud is available for researchers who are part of
 1. The notebooks and supporting files are on the MIT Supercloud so you can either copy them to your home directory on Supercloud or download the files from this repository to your home directory on Supercloud.
 2. Log into the Supercloud portal.
 3. Start up a Jupyter instance.
-   a. Click on the Jupter Link.
-   b. Select "Launch Jupyter Notebook" to launch with defaults option or select "Show Advanced Launch Options" and select what you need. This notebook does not require any advanced options.
-   c. Click on the "Open Notebook" link to open Jupyter.
+   1. Click on the Jupter Link.
+   2. Select "Launch Jupyter Notebook" to launch with defaults option or select "Show Advanced Launch Options" and select what you need. This notebook does not require any advanced options.
+   3. Click on the "Open Notebook" link to open Jupyter.
 4. You will see a list of directories/folders in your home directory which you can click on to navigate through. Navigate to the location where you copied/downloaded the notebook files.
 5. Start up the notebook by clicking the JupyterWarmup_Octave.ipynb file.
 
