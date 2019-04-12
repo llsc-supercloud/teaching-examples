@@ -2,7 +2,7 @@
 
 These Jupyter Notebook and supporting files in this repository are intended to provide the learner with a brief introduction to working with Julia in a Jupyter Notebook.  Support for Julia is not standard for Jupyter and thus requires the inclusion of an additional kernel.  The instructions below provide the steps necessary for running these notebooks on the MIT Supercloud, where Julia Jupyter Notebooks are supported, and an outline of the steps for running the notebooks on a stand-alone desktop system.  Please follow the appropriate set of instructions for your computing resources.
 
-Please note that the MIT Supercloud is available for researchers who are part of the Massachusetts Green High Performance Computing Center and/or are working in collaboration with MIT.  
+Please note that the MIT Supercloud is available for researchers who are part of the Massachusetts Green High Performance Computing Center and/or are working in collaboration with MIT.  These notebooks were created with the MIT Supercloud and Lincoln Laboratory Supercomputing Center (LLSC) in mind, and so some of the best practices may not be relevant to running Jupyter on a desktop, particularly instructions on how to down your instance. We have replace the "Logout" button in Jupyter with "Shutdown", which shuts down your entire Jupyter instance.
 
 
 ## MIT Supercloud
