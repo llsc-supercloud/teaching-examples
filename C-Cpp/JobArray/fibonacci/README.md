@@ -47,3 +47,5 @@ Since we have included the Slurm options we want in our submission script, we ca
 ```bash
 sbatch submit.sh
 ```
+
+In the submission script, the `-o` argument indicates the name of the file where the output (the top 5 words) is written. The `-a` argument indicates which indices to create tasks for. In this example, 1-4 creates task IDs 1,2,3,4 and the Python script determines which indices the task iterates over.
