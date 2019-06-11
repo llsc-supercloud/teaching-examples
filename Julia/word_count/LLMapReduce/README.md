@@ -17,4 +17,3 @@ LLMapReduce --mapper mapper.sh --reducer reducer.sh --input ../../../data/word_c
 If you would like to keep the output and intermeidate files, add the option `--keep=true`.
 
 In this example, `mapper.sh` is the shell script calling the script that is being mapped over the input files (`top5overall_map.jl`). The script `reducer.sh` is the shell script that calls the reducer (`top5overall_reduce.jl`). The directory `../../../data/word_count/` is the directory of input files, and `counts` is the output directory for the mapper.
-

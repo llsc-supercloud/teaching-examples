@@ -5,7 +5,7 @@
 #SBATCH -n 14
 
 # Initialize Modules
-source /usr/share/Modules/init/sh
+source /etc/profile
 
 #Load julia module
 module load julia-1.0

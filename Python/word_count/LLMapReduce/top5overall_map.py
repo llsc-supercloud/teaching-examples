@@ -1,5 +1,5 @@
 import os, sys, json
-sys.path.append('../../')
+sys.path.append('../')
 from word_count_helpers import *
 
 inOutFileList = open(sys.argv[1],"r+")

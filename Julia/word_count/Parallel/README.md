@@ -16,6 +16,7 @@ sbatch submit_forkjoin.sh
 ```
 
 The file `submit_forkjoin.sh` is the submission script. It contains the SLURM arguments in the script. The options are:
+
 - `-o`: indicates the name of the file where the output (the top 5 words) is written
 - `-n`: indicates the number of cores or cpus allocated to the job
 

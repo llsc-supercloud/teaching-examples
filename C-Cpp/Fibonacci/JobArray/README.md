@@ -12,7 +12,7 @@ Running this code assumes you have:
 
 1. A directory structure identical to this repository
     1. Input files in `../../../data/fibonacci/`
-    2. Executable `fibonacci` in `../../bin/`
+    2. Executable `fibonacci` in `../bin/`
 2. Python to run the wrapper code (written for Python 3, should run with Python 2)
 
 ## Testing the Serial Code Interactively

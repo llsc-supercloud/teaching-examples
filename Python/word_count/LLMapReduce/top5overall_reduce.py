@@ -1,5 +1,5 @@
 import os, sys, json, csv
-sys.path.append('../../')
+sys.path.append('../')
 from word_count_helpers import *
 
 # Grab the two arguments that are passed in

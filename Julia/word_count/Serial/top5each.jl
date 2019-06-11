@@ -1,6 +1,6 @@
 # Read in file of helper functions
 # This file incluse: cleantext, countwords
-include("../../word_count_helpers.jl")
+include("../word_count_helpers.jl")
 
 # Load the file names
 dataLoc = "../../../data/word_count/";

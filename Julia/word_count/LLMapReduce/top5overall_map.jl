@@ -1,6 +1,6 @@
 # Activate environment
 
-include("../../word_count_helpers.jl")
+include("../word_count_helpers.jl")
 using FileIO,JSON
 
 # Grab the two arguments that are passed in
