@@ -7,10 +7,10 @@
 # Initialize the module command first
 source /etc/profile
 
-# load MPI module
+# Load MPI module
 module load mpi/mpich-x86_64
 
-# load anaconda module
+# Load Anaconda module
 module load anaconda3-5.0.1
 
 # Call your script as you would from the command line

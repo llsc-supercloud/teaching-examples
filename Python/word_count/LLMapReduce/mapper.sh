@@ -3,7 +3,7 @@
 # Initialize Modules
 source /etc/profile
 
-# Load Julia Module
+# Load Anaconda Module
 module load anaconda3-5.0.1
 
 # Call your script as you would from the command line, passing in $1 and $2 as arugments

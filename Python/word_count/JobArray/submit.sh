@@ -9,7 +9,7 @@
 # Initialize Modules
 source /etc/profile
 
-# Load Julia Module
+# Load Anaconda Module
 module load anaconda3-5.0.1
 
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID

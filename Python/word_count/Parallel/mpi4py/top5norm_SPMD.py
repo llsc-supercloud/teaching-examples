@@ -15,7 +15,7 @@ pid = os.getpid()
 print("Hello World! I am process %d of %d on %s with pid %d.\n" % (rank, size, name, pid))
 
 # Load the file names                                                                                                                                                                                  
-dataDir = "../../../data/word_count/"
+dataDir = "../../../../data/word_count/"
 fnames = os.listdir(dataDir)
 
 idx = range(len(fnames))
