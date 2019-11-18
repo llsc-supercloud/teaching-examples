@@ -26,7 +26,6 @@ if my_rank > 0
     print("$my_rank: Sending mycounts $my_rank -> 0\n")
     sreq = MPI.Send(length(msg), 0, my_rank+n_procs, comm) # First send the length of the message
     sreq = MPI.Send(msg, 0, my_rank+(n_procs*2), comm) # Then send the message
-    println(sreq)
 else
     allcounts = Array{Array{UInt8,1},1}(undef,n_procs-1)
     for i = 1:n_procs-1

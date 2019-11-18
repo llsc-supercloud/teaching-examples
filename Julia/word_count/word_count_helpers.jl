@@ -24,7 +24,7 @@ stopwords=["as", "a", "able", "about", "above", "according", "accordingly", "acr
     "indicated", "indicates", "inner", "insofar", "instead", "into", "inward", "is", "isn", "t", "it", "it", "d",
     "it", "ll", "it", "s", "its", "itself", "just", "keep", "keeps", "kept", "know", "knows", "known", "last",
     "lately", "later", "latter", "latterly", "least", "less", "lest", "let", "let", "s", "like", "liked",
-    "likely", "little", "look", "looking", "looks", "ltd", "mainly", "many", "may", "maybe", "me", "mean",
+    "likely", "little", "look", "looking", "looks", "ltd", "made", "mainly", "many", "may", "maybe", "me", "mean",
     "meanwhile", "merely", "might", "more", "moreover", "most", "mostly", "much", "must", "my", "myself",
     "name", "namely", "nd", "near", "nearly", "necessary", "need", "needs", "neither", "never", "nevertheless",
     "new", "next", "nine", "no", "nobody", "non", "none", "noone", "nor", "normally", "not", "nothing",
@@ -68,9 +68,9 @@ end
 # countwords constructs a dictionary of the words that appear in the text as the keys and their counts as the values
 function countwords(text)
     textSep = split(text," ")
-    wordcounts = Dict{String,Float64}()
+    wordcounts = Dict{String,Int}()
     for w in textSep
-        wordcounts[w] = get(wordcounts, w, 0.0) + 1.0
+        wordcounts[w] = get(wordcounts, w, 0) + 1
     end
     return wordcounts
 end

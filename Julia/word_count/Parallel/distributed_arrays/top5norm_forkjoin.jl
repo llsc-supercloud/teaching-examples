@@ -10,11 +10,11 @@ println(nworkers())
 # Load required packages and helpers on all processes
 @everywhere begin
     using DistributedArrays,Statistics
-    include("parallelhelpers.jl")
+    include("../parallelhelpers.jl")
 end
 
 # Load the file names
-dataLoc = "../../../data/word_count/";
+dataLoc = "../../../../data/word_count/";
 fnames = dataLoc.*readdir(dataLoc)
 
 # Create a distributed array with the file names
