@@ -8,17 +8,26 @@ Random forest chooses random subset of features and builds a number of decision 
 The left-out samples of the decision trees in the forest are the out of bag (OOB) errors.
 We use packages randomForest to build number of decision trees and caret to find optimal model by trying multiple models with resampling to generate random forest model.
 
-By using registerDoParallel(cores = n) and getDoParWorkers() we can set the number of cores and run multiple times to get system time as done in the serial version of the code. 
+Random forest approach :
+Step 1) Import the data
+Step 2) Data partition for training and testing 
+Step 3) Train the model
+Step 4) Construct accuracy function
+Step 5) Visualize the model
+Step 6) Evaluate the model
+Step 7) Visualize result for training and testing
+Step 8) Visualize results
 
-Sys.time() gives the execution time of the program, hence we chose to run it multiple times and compared the execution time of serial and parallel execution. We observe that, parallel execution gives output in less time as compared to serial execution, as the work is divided into cores by processes.
+Sys.time() gives the execution time of the program.
+(We observe that, parallel execution gives output in less time as compared to serial execution, as the work is divided into cores by processes.)
 
 # Submitting the Serial R example :
 ___
 
-We are submitting both serial and parallel execution in same batch script named submit.sh. 
+We are submitting serial execution in batch script named submit.sh. 
 Command used to run the R script is as follows :
-    • First go the directory where the parallel R file is located.
-    • Then run : Rscript rf.R
-Command to run the shell script to run both serial and parallel executions at once is as follows :
-    • First go the directory where the parallel shell script is located.
-    • Then submit batch job as : LLsub submit .sh.
+    • First go the directory where the serial R file is located.
+    • Then run : Rscript rf_serial.R
+Command to run the shell script to run serial execution is as follows :
+    • First go the directory where the serial batch script is located.
+    • Then submit batch job as : LLsub submit.sh.
