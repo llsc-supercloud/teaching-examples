@@ -1,5 +1,5 @@
 # Read Data
-data<-read.csv("CTG.csv")
+data<-read.csv("../CTG.csv")
 str(data)
 data$NSP <- as.factor(data$NSP)
 table(data$NSP)
