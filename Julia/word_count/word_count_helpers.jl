@@ -68,9 +68,9 @@ end
 # countwords constructs a dictionary of the words that appear in the text as the keys and their counts as the values
 function countwords(text)
     textSep = split(text," ")
-    wordcounts = Dict{String,Int}()
+    wordcounts = Dict{String,Float64}()
     for w in textSep
-        wordcounts[w] = get(wordcounts, w, 0) + 1
+        wordcounts[w] = get(wordcounts, w, 0.0) + 1.0
     end
     return wordcounts
 end
