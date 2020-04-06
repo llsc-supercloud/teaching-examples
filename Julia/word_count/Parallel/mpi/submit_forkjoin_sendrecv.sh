@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Slurm sbatch options
 #SBATCH -o top5norm_forkjoin.log-%j
@@ -9,8 +9,8 @@
 source /etc/profile
 
 # Load Julia and MPI Modules
-module load julia-latest
-module load mpi/mpich-x86_64
+module load julia/1.1.1
+module load mpi/openmpi-4.0
 
 # Call your script as you would from the command line
 mpirun julia top5norm_forkjoin_sendrecv.jl

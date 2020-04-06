@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Slurm sbatch options
 #SBATCH -o top5norm_SPMD.log-%j
@@ -8,7 +8,7 @@
 source /etc/profile
 
 #Load Julia module
-module load julia-latest
+module load julia/1.1.1
 
 # Call your script as you would from the command line
 julia top5norm_SPMD.jl
