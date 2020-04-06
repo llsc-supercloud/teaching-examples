@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Slurm sbatch options
 #SBATCH -o top5norm_forkjoin.log-%j
@@ -8,11 +8,9 @@
 # Initialize the module command first
 source /etc/profile
 
-# Load MPI module
-module load mpi/mpich-x86_64
-
-# Load Anaconda module
-module load anaconda3-5.0.1
+# Load Anaconda and MPI module
+module load anaconda/2020a
+module load mpi/openmpi-4.0
 
 # Call your script as you would from the command line
 mpirun python top5norm_forkjoin.py

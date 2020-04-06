@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #SBATCH -o top5.out-%j-%a
 #SBATCH -a 1-4
@@ -10,7 +10,7 @@
 source /etc/profile
 
 # Load Anaconda Module
-module load anaconda3-5.0.1
+module load anaconda/2020a
 
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 echo "Number of Tasks: " $SLURM_ARRAY_TASK_COUNT
