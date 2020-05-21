@@ -10,7 +10,7 @@
 source /etc/profile
 
 # Load Julia Module
-module load julia/1.1.1
+module load julia/1.3.0
 
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 echo "Number of Tasks: " $SLURM_ARRAY_TASK_COUNT

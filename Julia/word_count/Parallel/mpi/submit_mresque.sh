@@ -8,7 +8,7 @@
 source /etc/profile
 
 # Load Julia and MPI Modules
-module load julia/1.1.1
+module load julia/1.3.0
 module load mpi/openmpi-4.0
 
 # Call your script as you would from the command line
