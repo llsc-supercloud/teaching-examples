@@ -11,4 +11,6 @@ module load anaconda/2020a
 echo "My task ID: " $LLSUB_RANK
 echo "Number of Tasks: " $LLSUB_SIZE
 
+
 python top5each.py $LLSUB_RANK $LLSUB_SIZE
+
