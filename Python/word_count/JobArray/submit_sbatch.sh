@@ -1,18 +1,17 @@
 #!/bin/bash
 
 #SBATCH -o top5.out-%j-%a
-#SBATCH -a 1-4
+#SBATCH -a 0-3
 
-# run with: sbatch submit.sh
-# or run with: LLsub submit.sh
+# run with: sbatch submit_sbatch.sh
 
 # Initialize Modules
 source /etc/profile
 
-# Load Julia Module
-module load julia/1.3.0
+# Load Anaconda Module
+module load anaconda/2020a
 
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 echo "Number of Tasks: " $SLURM_ARRAY_TASK_COUNT
 
-julia top5each.jl $SLURM_ARRAY_TASK_ID $SLURM_ARRAY_TASK_COUNT
+python top5each.py $SLURM_ARRAY_TASK_ID $SLURM_ARRAY_TASK_COUNT

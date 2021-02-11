@@ -13,7 +13,7 @@ my_task_id = int(sys.argv[1])
 num_tasks = int(sys.argv[2])
 
 # Assign indices to this process/task
-my_fnames = fnames[my_task_id-1:len(fnames):num_tasks]
+my_fnames = fnames[my_task_id:len(fnames):num_tasks]
 
 for fname in my_fnames:
     # Read in file and clean the text
