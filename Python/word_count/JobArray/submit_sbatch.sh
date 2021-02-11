@@ -1,10 +1,9 @@
 #!/bin/bash
 
 #SBATCH -o top5.out-%j-%a
-#SBATCH -a 1-4
+#SBATCH -a 0-3
 
-# run with: sbatch jobArray.sh
-# or run with: LLsub jobArray.sh
+# run with: sbatch submit_sbatch.sh
 
 # Initialize Modules
 source /etc/profile

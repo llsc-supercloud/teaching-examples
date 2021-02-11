@@ -7,6 +7,7 @@ The MIT Supercloud and LLSC use Slurm as a scheduler, and so submission scripts 
 We have organized these examples first by language, then by type (serial, throughput/job array, map reduce, fully parallel), and finally by example problem. Data used by multiple examples sits in the top level directory, and supporting scripts used by multiple examples reside at the Language level. The paths in the examples reflect this directory structure.
 
 To run the examples you have a few options:
+
 1. **MIT Supercloud and LLSC Only**: Copy these examples to your home directory from the shared location (ask the Supercloud or LLSC team for the path)
     1. Log into the system (ssh or Jupyter)
     2. If using Jupyter, open a terminal window

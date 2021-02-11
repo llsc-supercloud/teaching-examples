@@ -5,3 +5,5 @@ MAPRED.*
 llmapreduce.out*
 *.out*
 *.log*
+*.pyc
+*.DS_Store
