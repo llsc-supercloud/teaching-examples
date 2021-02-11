@@ -12,7 +12,7 @@ task_id = parse(Int,ARGS[1])
 num_tasks = parse(Int,ARGS[2])
 
 # Check to see if the index is valid (so the program exits cleanly if the wrong indices are passed)
-for i in task_id:num_tasks:length(fnames)
+for i in task_id+1:num_tasks:length(fnames)
 
     # Read in file and clean the text
     f = open(fnames[i])

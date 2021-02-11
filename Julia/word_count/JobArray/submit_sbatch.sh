@@ -1,10 +1,9 @@
 #!/bin/bash
 
-#SBATCH -o top5.out-%j-%a
-#SBATCH -a 1-4
+#SBATCH -o top5.out-%A-%a
+#SBATCH -a 0-3
 
 # run with: sbatch submit.sh
-# or run with: LLsub submit.sh
 
 # Initialize Modules
 source /etc/profile
