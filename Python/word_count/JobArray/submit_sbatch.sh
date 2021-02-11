@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH -o top5.out-%j-%a
+#SBATCH -o top5.out-%A-%a
 #SBATCH -a 0-3
 
 # run with: sbatch submit_sbatch.sh
