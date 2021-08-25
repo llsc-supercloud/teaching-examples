@@ -1,1 +1,1 @@
-# Using HuggingFace on Supercloud for sentiment analysis
+# Sentiment analysis with HuggingFace on Supercloud
