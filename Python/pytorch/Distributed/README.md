@@ -26,7 +26,7 @@ The file `batch.sh` is the submission script. It contains the SLURM arguments in
 - `-N`: the number of nodes for the job, here we pick 2 to show the job is truly distributed and communicating across nodes
 - `--tasks-per-node`: the number of tasks/processes/ranks per node, by default each task is allocated a single core
 - `--gres=gpu:volta:2`: the type (volta) and number (2) of GPUs for the job, this is a per-node number, in this example you would get 2 GPUs per node
-- `-c` or `--cpus-per-task`: this is not included in this script, but should be used if you are doing any sort of real training, as Pytorch is multithreaded and will take advantage additional cores. You will also have to tell Pytorch you have allocated these cores by ...
+- `-c` or `--cpus-per-task`: this is not included in this script, but should be used if you are doing any sort of real training, as Pytorch is multithreaded and will take advantage additional cores. For Xeon-G6 GPU nodes a good number would be 20. You will also have to tell Pytorch you have allocated these cores by setting the `OMP_NUM_THREADS` environment variable in your submission script or `torch.set_num_threads()` in your Python script.
 
 Other flags that may be needed on other LLSC systems:
 
