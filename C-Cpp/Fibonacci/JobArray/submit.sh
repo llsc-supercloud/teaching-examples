@@ -4,11 +4,9 @@
 #SBATCH -o myout.log-%j-%a
 #SBATCH -a 1-4
 
-# Initialize Modules
-source /etc/profile
-
-# Load the Anaconda Module
-module load anaconda3-2019a
+# Load Anaconda and MPI module
+module load anaconda/2023a
+module load mpi/openmpi-4.1.3
 
 # Specify Input File
 INPUT_FILE=../../../data/fibonacci/inputFile_200

@@ -6,11 +6,8 @@
 
 # run with: sbatch submit_sbatch.sh
 
-# Initialize Modules
-source /etc/profile
-
 # Load Anaconda Module
-module load anaconda/2020a
+module load anaconda/2023a
 
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 echo "Number of Tasks: " $SLURM_ARRAY_TASK_COUNT
