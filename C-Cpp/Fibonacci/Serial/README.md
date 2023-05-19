@@ -38,7 +38,7 @@ Once you have started your interactive session you can test a single input fibon
 To run on multiple inputs using the wrapper code, first load the proper Anaconda module then run the wrapper, specifying the input file:
 
 ```bash
-module load anaconda3-2019a
+module load anaconda/2023a
 python wrapper.py ../../../data/fibonacci/inputFile_10
 ```
 

@@ -4,12 +4,9 @@
 #SBATCH -o top5norm_mresque.log-%j
 #SBATCH -n 4
 
-#Initialize Modules
-source /etc/profile
-
 # Load Julia and MPI Modules
-module load julia/1.3.0
-module load mpi/openmpi-4.0
+module load julia/1.7.3
+module load mpi/openmpi-4.1.3
 
 # Call your script as you would from the command line
 mpirun julia top5norm_mresque.jl

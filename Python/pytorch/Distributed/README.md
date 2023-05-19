@@ -26,7 +26,7 @@ The file `batch.sh` is the submission script. It contains the SLURM arguments in
 - `-N`: the number of nodes for the job, here we pick 2 to show the job is truly distributed and communicating across nodes
 - `--tasks-per-node`: the number of tasks/processes/ranks per node, by default each task is allocated a single core
 - `--gres=gpu:volta:2`: the type (volta) and number (2) of GPUs for the job, this is a per-node number, in this example you would get 2 GPUs per node
-- `-c` or `--cpus-per-task`: this is not included in this script, but should be used if you are doing any sort of real training, as Pytorch is multithreaded and will take advantage additional cores. You will also have to tell Pytorch you have allocated these cores by ...
+- `-c` or `--cpus-per-task`: this is not included in this script, but should be used if you are doing any sort of real training, as Pytorch is multithreaded and will take advantage additional cores. For Xeon-G6 GPU nodes a good number would be 20. You will also have to tell Pytorch you have allocated these cores by setting the `OMP_NUM_THREADS` environment variable in your submission script or `torch.set_num_threads()` in your Python script.
 
 Other flags that may be needed on other LLSC systems:
 
@@ -36,10 +36,10 @@ Other flags that may be needed on other LLSC systems:
 The next portion of the script loads modules. In this example `mpirun` is used as a convenient launch mechanism to set up the processes, while NCCL is used by Pytorch for communication. Pytorch is available through the system anaconda installation, and Cuda is needed to use the GPUs:
 
 ```bash
-module load anaconda/2021a
-module load mpi/openmpi-4.0
-module load cuda/10.1
-module load nccl/2.5.6-cuda10.1
+module load anaconda/2023a
+module load mpi/openmpi-4.1.3
+module load cuda/11.6
+module load nccl/2.11.4-cuda11.6
 ```
 
 Before launching the code some environment variables are set for Pytorch to get the hostname and a free port for the leader process and to tell MPI how to set up communication.

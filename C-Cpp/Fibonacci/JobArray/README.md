@@ -34,7 +34,7 @@ The `LLsub` command also contains MIT Supercloud-specific options for partition 
 To run the wrapper code, first load the proper Anaconda module then run the wrapper, specifying the input file, task ID, and number of tasks:
 
 ```bash
-module load anaconda3-2019a
+module load anaconda/2023a
 python wrapper.py ../../../data/fibonacci/inputFile_10 1 1
 ```
 
