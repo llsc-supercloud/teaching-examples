@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Scheduler Options
-#SBATCH -o myout.log-%j-%a
+#SBATCH -o myout.log-%A-%a
 #SBATCH -a 1-4
 
 # Load Anaconda module
