@@ -2,11 +2,8 @@
 
 # Run with: LLsub ./submit_LLsub.sh [1,4,1]
 
-# Initialize Modules
-source /etc/profile
-
 # Load Anaconda Module
-module load anaconda/2020a
+module load anaconda/2023a
 
 echo "My task ID: " $LLSUB_RANK
 echo "Number of Tasks: " $LLSUB_SIZE

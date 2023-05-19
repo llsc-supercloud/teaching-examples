@@ -1,14 +1,11 @@
 #!/bin/bash
 
 # Scheduler Options
-#SBATCH -o myout.log-%j-%a
+#SBATCH -o myout.log-%A-%a
 #SBATCH -a 1-4
 
-# Initialize Modules
-source /etc/profile
-
-# Load the Anaconda Module
-module load anaconda3-2019a
+# Load Anaconda module
+module load anaconda/2023a
 
 # Specify Input File
 INPUT_FILE=../../../data/fibonacci/inputFile_200

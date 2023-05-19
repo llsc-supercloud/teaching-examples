@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# Initialize Modules
-source /etc/profile
-
 # Load the Anaconda Module
-module load anaconda3-2019a
+module load anaconda/2023a
 
 # Specify Input File
 INPUT_FILE=../../../data/fibonacci/inputFile_10
