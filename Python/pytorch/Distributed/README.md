@@ -36,10 +36,10 @@ Other flags that may be needed on other LLSC systems:
 The next portion of the script loads modules. In this example `mpirun` is used as a convenient launch mechanism to set up the processes, while NCCL is used by Pytorch for communication. Pytorch is available through the system anaconda installation, and Cuda is needed to use the GPUs:
 
 ```bash
-module load anaconda/2021a
-module load mpi/openmpi-4.0
-module load cuda/10.1
-module load nccl/2.5.6-cuda10.1
+module load anaconda/2023a
+module load mpi/openmpi-4.1.3
+module load cuda/11.6
+module load nccl/2.11.4-cuda11.6
 ```
 
 Before launching the code some environment variables are set for Pytorch to get the hostname and a free port for the leader process and to tell MPI how to set up communication.
