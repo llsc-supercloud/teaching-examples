@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# run with: LLsub ./submit_sbatch.sh [1,4,1]
+# run with: LLsub ./submit_LLsub.sh [1,4,1]
 
 # Load Julia Module
 module load julia/1.7.3
