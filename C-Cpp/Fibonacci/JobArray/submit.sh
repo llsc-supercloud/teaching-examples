@@ -4,9 +4,8 @@
 #SBATCH -o myout.log-%j-%a
 #SBATCH -a 1-4
 
-# Load Anaconda and MPI module
+# Load Anaconda module
 module load anaconda/2023a
-module load mpi/openmpi-4.1.3
 
 # Specify Input File
 INPUT_FILE=../../../data/fibonacci/inputFile_200
