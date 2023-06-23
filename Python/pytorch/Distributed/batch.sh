@@ -2,7 +2,7 @@
 #SBATCH --job-name pytorch
 #SBATCH -o %j.log
 #SBATCH -N 2
-#SBATCH --tasks-per-node=2
+#SBATCH --ntasks-per-node=2
 #SBATCH --gres=gpu:volta:2
 
 # Load modules
