@@ -4,10 +4,12 @@
 #SBATCH -N 2
 #SBATCH --ntasks-per-node=2
 #SBATCH --gres=gpu:volta:2
+#SBATCH --distribution=nopack
 
 # Load modules
+source /etc/profile
 module load anaconda/2023a
-module load mpi/openmpi-4.1.3
+module load mpi/openmpi-4.1.5
 module load cuda/11.6
 module load nccl/2.11.4-cuda11.6
 
