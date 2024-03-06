@@ -18,7 +18,7 @@ n = 16; % number of independent iterations
 % Create Maps.
 map1 = 1;
 if (PARALLEL)
-    my_rank = pMATLAB.my_rank
+    my_rank = Pid
     % Break up rows.
     map1 = map([Np 1], {}, 0:Np-1 );
 end
