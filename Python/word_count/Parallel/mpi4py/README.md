@@ -17,11 +17,17 @@ top5norm_SPMD.py; submit_SPMD.py
 To run this example, execute one of the following two commands in this directory (using the Fork-Join example):
 
 ```bash
-LLsub submit_forkjoin.sh
 sbatch submit_forkjoin.sh
+```
+
+To execute on a specific partition, for example `mit_normal`, add this with the `-p` flag:
+
+```bash
+sbatch -p mit_normal submit_forkjoin.sh
 ```
 
 The file `submit_forkjoin.sh` is the submission script. It contains the SLURM arguments in the script. The options are:
 
 - `-o`: indicates the name of the file where the output (the top 5 words) is written
 - `-n`: indicates the number of cores or cpus allocated to the job
+

@@ -5,8 +5,8 @@
 #SBATCH -n 4
 
 # Load Anaconda and MPI module
-module load anaconda/2023a
-module load mpi/openmpi-4.1.3
+module load miniforge
+module load openmpi
 
 # Call your script as you would from the command line
 mpirun python top5norm_forkjoin.py
