@@ -3,6 +3,7 @@
 # Slurm sbatch options
 #SBATCH -o top5norm.log-%j
 #SBATCH -n 4
+#SBATCH -p mit_normal
 
 # Load Anaconda and MPI module
 module load miniforge
