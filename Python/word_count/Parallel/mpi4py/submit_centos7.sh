@@ -10,8 +10,7 @@ module load openmpi/4.0.5
 
 module load miniforge
 
-
 # Call your script as you would from the command line
-mpirun python top5norm_forkjoin.py
+mpirun python top5norm.py
 
 
