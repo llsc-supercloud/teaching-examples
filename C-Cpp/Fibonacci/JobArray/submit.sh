@@ -4,10 +4,8 @@
 #SBATCH -o myout.log-%A-%a
 #SBATCH -a 1-4
 
-#TODO: rewrite to run with bash without wrapper
-
 # Load Anaconda module
-module load miniforge
+module load anaconda/2023a
 
 # Specify Input File
 INPUT_FILE=../../../data/fibonacci/inputFile_200
