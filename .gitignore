@@ -7,4 +7,3 @@ llmapreduce.out*
 *.log*
 *.pyc
 *.DS_Store
-.venv*

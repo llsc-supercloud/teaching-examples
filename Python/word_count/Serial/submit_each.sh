@@ -1,9 +1,7 @@
 #!/bin/bash
 
-#SBATCH -o submit_each.sh.log-%j
-
 # Load Anaconda Module
-module load miniforge
+module load anaconda/2023a
 
 # Call your script as you would from the command line
 python top5each.py
