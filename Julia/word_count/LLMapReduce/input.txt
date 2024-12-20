@@ -1,8 +1,0 @@
-../../../data/word_count/1059-0.txt
-../../../data/word_count/23218-0.txt
-../../../data/word_count/524-0.txt
-../../../data/word_count/775-0.txt
-../../../data/word_count/780-0.txt
-../../../data/word_count/pg11696.txt
-../../../data/word_count/pg31547.txt
-../../../data/word_count/pg7308.txt

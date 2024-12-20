@@ -1,7 +1,9 @@
 #!/bin/bash
 
+# TODO: Rewrite in loop in bash to remove need for wrapper
+
 # Load the Anaconda Module
-module load anaconda/2023a
+module load miniforge
 
 # Specify Input File
 INPUT_FILE=../../../data/fibonacci/inputFile_10

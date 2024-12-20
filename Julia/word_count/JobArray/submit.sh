@@ -2,11 +2,12 @@
 
 #SBATCH -o top5.out-%A-%a
 #SBATCH -a 0-3
+#SBATCH -p mit_normal
 
-# run with: sbatch submit_sbatch.sh
+# run with: sbatch submit.sh
 
 # Load Julia Module
-module load julia/1.7.3
+module load julia/1.9.1
 
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 echo "Number of Tasks: " $SLURM_ARRAY_TASK_COUNT
