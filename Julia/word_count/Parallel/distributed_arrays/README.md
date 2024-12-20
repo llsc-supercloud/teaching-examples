@@ -8,7 +8,15 @@ There are a number of data files containing text. The goal is to get the top 5 w
 
 This example splits up the set of books across all processes which then calculate their own raw word counts. These counts are gathered on process 0 (the root), who calculates the overall word count and sends that to the rest of the processes who then calculate the normalized count for the books assigned to them.
 
-To run this example, execute one of the following two commands in this directory:
+Before running this example you will first need to install the `ClusterManagers` and `DistributedArrays` packages. Be sure you are on a login node with the same operating system you are submitting jobs to (CentOS 7 vs Rocky 8). First load the Julia module (`module load julia`). Then start julia with the `julia` command and run:
+
+```julia
+import Pkg
+Pkg.add("ClusterManagers")
+Pkg.add("DistributedArrays")
+```
+
+To run this example, execute the following in this directory:
 
 ```bash
 sbatch submit.sh
